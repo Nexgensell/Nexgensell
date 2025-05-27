@@ -1,139 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NexGenSell</title>
-    <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexGenSell</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #111;
-            color: white;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+    }
 
-        h1 {
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
+    #logo {
+      height: 60px;
+    }
 
-        /* Logo Styling */
-        #logo {
-            width: 150px;
-            margin-bottom: 30px;
-            transition: transform 0.3s ease-in-out;
-        }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #222;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
 
-        #logo:hover {
-            transform: scale(1.1);
-        }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      transition: background 0.3s;
+    }
 
-        /* Section Styling */
-        section {
-            margin-top: 40px;
-            text-align: center;
-            animation: fadeIn 3s ease-in-out;
-        }
+    nav a:hover {
+      background-color: #333;
+    }
 
-        .service-button {
-            background-color: #0e76a8;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            margin: 10px;
-            transition: background-color 0.3s ease;
-        }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-        .service-button:hover {
-            background-color: #3498db;
-        }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
 
-        /* Hover animation for sections */
-        .service-button:hover {
-            transform: scale(1.1);
-        }
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
 
-        /* Animation for text fade-in */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
 
-        /* Navigation Styling */
-        nav {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            background-color: #333;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            padding: 10px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #0e76a8;
-        }
-    </style>
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-    </nav>
+  <header>
+    <img src="logo.png" alt="NexGenSell Logo" id="logo" />
+  </header>
 
-    <!-- Logo Section -->
-    <img src="YOUR_LOGO_URL" alt="NexGenSell Logo" id="logo" />
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <!-- Title Section -->
+  <section class="hero">
     <h1>Welcome to NexGenSell</h1>
-    
-    <!-- Service Section -->
-    <section>
-        <h2>Our Services</h2>
-        <button class="service-button">Service 1</button>
-        <button class="service-button">Service 2</button>
-        <button class="service-button">Service 3</button>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 NexGenSell. All Rights Reserved.</p>
-    </footer>
+    <p>Your gateway to next-generation digital solutions.</p>
+  </section>
 
 </body>
 </html>
