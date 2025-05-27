@@ -1,168 +1,139 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NexGenSell | Launch Your Empire</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Orbitron', sans-serif;
-    }body {
-  background: linear-gradient(to right, #000428, #004e92);
-  color: white;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NexGenSell</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.8);
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-.logo img {
-  height: 50px;
-}
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-nav {
-  display: flex;
-  gap: 1rem;
-}
+        /* Logo Styling */
+        #logo {
+            width: 150px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border: 1px solid white;
-  border-radius: 5px;
-}
+        #logo:hover {
+            transform: scale(1.1);
+        }
 
-nav a:hover {
-  background-color: white;
-  color: #000;
-}
+        /* Section Styling */
+        section {
+            margin-top: 40px;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
 
-.hero {
-  text-align: center;
-  padding: 5rem 2rem;
-}
+        .service-button {
+            background-color: #0e76a8;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
+        .service-button:hover {
+            background-color: #3498db;
+        }
 
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-}
+        /* Hover animation for sections */
+        .service-button:hover {
+            transform: scale(1.1);
+        }
 
-.hero button {
-  padding: 0.75rem 1.5rem;
-  background-color: #00d4ff;
-  color: #000;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+        /* Animation for text fade-in */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.section {
-  padding: 3rem 2rem;
-  background-color: #020a26;
-}
+        /* Navigation Styling */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+        }
 
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
 
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  text-align: center;
-}
-
-.service {
-  background: #01143f;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
-}
-
-.footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: #000;
-  font-size: 0.9rem;
-}
-
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-}
-
-  </style>
+        nav a:hover {
+            background-color: #0e76a8;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="https://nexgensell.vercel.app/logo.png" alt="NexGenSell Logo" />
-    </div>
+
+    <!-- Navigation Bar -->
     <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
     </nav>
-  </header>  <section class="hero">
-    <h1>Launch Your Empire with NexGenSell</h1>
-    <p>Website Creation, Chatbots, Social Setup & More</p>
-    <button onclick="location.href='#services'">Get Started</button>
-  </section>  <section id="services" class="section">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Website Design</h3>
-        <p>Get a powerful, custom-built website that works on all devices.</p>
-      </div>
-      <div class="service">
-        <h3>AI Chatbots</h3>
-        <p>Automate your customer service with smart, conversational bots.</p>
-      </div>
-      <div class="service">
-        <h3>Social Media Setup</h3>
-        <p>We create your full social media presence across platforms.</p>
-      </div>
-      <div class="service">
-        <h3>eCommerce Integration</h3>
-        <p>We help you set up shop and sell online with ease.</p>
-      </div>
-    </div>
-  </section>  <section id="about" class="section">
-    <h2>About NexGenSell</h2>
-    <p style="text-align: center; max-width: 600px; margin: 0 auto;">
-      NexGenSell is a digital services agency focused on helping you launch and scale your online business. We work with cutting-edge tools and proven strategies so you can focus on results.
-    </p>
-  </section>  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p style="text-align: center;">
-      Email: info@nexgensell.com<br>
-      WhatsApp: +123 456 7890
-    </p>
-  </section>  <footer class="footer">
-    &copy; 2025 NexGenSell. All rights reserved.
-  </footer>
+
+    <!-- Logo Section -->
+    <img src="YOUR_LOGO_URL" alt="NexGenSell Logo" id="logo" />
+
+    <!-- Title Section -->
+    <h1>Welcome to NexGenSell</h1>
+    
+    <!-- Service Section -->
+    <section>
+        <h2>Our Services</h2>
+        <button class="service-button">Service 1</button>
+        <button class="service-button">Service 2</button>
+        <button class="service-button">Service 3</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 NexGenSell. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
