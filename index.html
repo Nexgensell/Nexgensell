@@ -1,158 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NexGenSell | Launch Your Empire</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexGenSell</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
-
-<header style="display: flex; align-items: center; padding: 10px;">
-  <img src="logo.png" alt="NexGenSell Logo" style="height: 50px; margin-right: 15px;">
-  <h1 style="font-family: 'Orbitron', sans-serif; font-size: 24px; color: #00FFD1;">NexGenSell</h1>
-</header>      font-family: 'Roboto', sans-serif;
-      background-color: #0f0f0f;
-      color: white;
-      line-height: 1.6;
-    }
-
     header {
-      background: #111;
-      padding: 1rem 2rem;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      justify-content: space-between;
+      background-color: #000;
+      padding: 10px 20px;
     }
-
     header img {
       height: 40px;
     }
-
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 22px;
+      color: #00FFD1;
+      margin: 0 10px;
+    }
     nav a {
       color: white;
-      margin-left: 2rem;
+      margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
     }
-
     .hero {
-      padding: 4rem 2rem;
+      background-color: #2ad3ff;
       text-align: center;
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      color: #fff;
+      padding: 60px 20px;
     }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-family: 'Orbitron', sans-serif;
-      margin-bottom: 1rem;
+    .hero h2 {
+      font-size: 36px;
+      font-weight: bold;
     }
-
     .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 2rem;
+      font-size: 18px;
+      max-width: 600px;
+      margin: 20px auto;
     }
-
     .hero button {
-      background: white;
-      color: #0072ff;
-      padding: 0.7rem 1.5rem;
-      font-size: 1rem;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: black;
+      color: white;
       border: none;
-      border-radius: 5px;
       cursor: pointer;
     }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      font-family: 'Orbitron', sans-serif;
-    }
-
-    .services p {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      background: #111;
-      color: #ccc;
+    .services {
+      padding: 40px 20px;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      margin-top: 3rem;
     }
-
-    @media (max-width: 768px) {
-      nav {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
+    .services h3 {
+      font-size: 28px;
+    }
+    .services p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="NexGenSell Logo">
+    <div style="display: flex; align-items: center;">
+      <img src="logo.png" alt="NexGenSell Logo">
+      <h1>NexGenSell</h1>
+    </div>
     <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Launch Your Empire</h1>
-    <p>Empower your digital business with NexGenSell. From custom websites to automation tools — we build your future, today.</p>
+    <h2>Launch Your Empire</h2>
+    <p>Let us help you sell your product. NexGenSell brings your digital vision to life with a futuristic, seamless platform.</p>
     <button>Get Started</button>
   </section>
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <p>Custom Website Design & Setup</p>
-    <p>AI Chatbot Integration</p>
-    <p>Social Media Automation</p>
-    <p>E-commerce Launch Services</p>
-    <p>Business Branding & Strategy</p>
+  <section class="services">
+    <h3>Our Services</h3>
+    <p>Website creation, chatbot setup, social media automation, and more to take your brand to the next level.</p>
   </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>NexGenSell is your digital launch partner. We handle the tech so you can focus on your vision. Built for entrepreneurs who want to scale faster, smarter, and more efficiently.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Have a question? Let’s build together.</p>
-    <p>Email: hello@nexgensell.com</p>
-  </section>
-
-  <footer>
-    &copy; 2025 NexGenSell. All rights reserved.
-  </footer>
 
 </body>
 </html>
