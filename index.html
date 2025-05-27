@@ -3,29 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NexGenSell</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>NexGenSell | Launch Your Empire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f0f0f;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero button {
+      background: white;
+      color: #0072ff;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .services p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.png" alt="NexGenSell Logo" style="height: 50px;">
+    <img src="logo.png" alt="NexGenSell Logo">
     <nav>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
     <h1>Launch Your Empire</h1>
-    <p>Let us help you sell your product. NexGenSell brings your digital vision to life with a futuristic, seamless platform.</p>
-    <a href="contact.html"><button>Get Started</button></a>
+    <p>Empower your digital business with NexGenSell. From custom websites to automation tools — we build your future, today.</p>
+    <button>Get Started</button>
   </section>
 
-  <section class="services">
+  <section id="services" class="services">
     <h2>Our Services</h2>
-    <p>Website creation, chatbot setup, social media automation, and more.</p>
-    <!-- Service cards can go here -->
+    <p>Custom Website Design & Setup</p>
+    <p>AI Chatbot Integration</p>
+    <p>Social Media Automation</p>
+    <p>E-commerce Launch Services</p>
+    <p>Business Branding & Strategy</p>
   </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>NexGenSell is your digital launch partner. We handle the tech so you can focus on your vision. Built for entrepreneurs who want to scale faster, smarter, and more efficiently.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Have a question? Let’s build together.</p>
+    <p>Email: hello@nexgensell.com</p>
+  </section>
+
+  <footer>
+    &copy; 2025 NexGenSell. All rights reserved.
+  </footer>
+
 </body>
 </html>
